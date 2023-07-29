@@ -5,7 +5,7 @@ import {BiLogoTelegram} from 'react-icons/bi';
 import {BsLinkedin} from 'react-icons/bs';
 import {useRef} from 'react';
 import emailjs from '@emailjs/browser';
-import Popup from './popup';
+import TICK from '../../assets/images/check-tick-icon-14141.png';
 
 const Contact = () => {
   const form = useRef();
@@ -21,12 +21,8 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
+      setShowPopup(true);
       e.target.reset();
-  };
-
-  const handleClosePopup = () => {
-    // Function to close the popup
-    setShowPopup(false);
   };
   
   return (
@@ -62,7 +58,15 @@ const Contact = () => {
           <textarea name='message' rows='7' placeholder='Your Message' required></textarea> 
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
-        {showPopup && <Popup onClose={handleClosePopup} />}
+        {/* Popup */}
+        {showPopup && (
+          <div className='popup'>
+            <img className='image' src={TICK}/>
+            <h2>Thank You!</h2>
+            <p>Your message has been successfully sent to Adnan. Thanks!</p>
+            <button className='btn btn-primary popup-btn' onClick={() => setShowPopup(false)}>OK</button>
+          </div>
+        )}
       </div>
     </section>
   )

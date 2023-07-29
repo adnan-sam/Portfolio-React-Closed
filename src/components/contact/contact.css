@@ -74,3 +74,30 @@ input, textarea {
         width: var(--container-width-sm);
     }
 }
+
+/* Popup */
+.popup {
+    width: 400px;
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    padding: 20px 30px 30px;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+.image {
+    width: 3rem;
+    margin: 0.8rem auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup-btn {
+    width: 60%;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,2);
+    transition: var(--transition);
+}

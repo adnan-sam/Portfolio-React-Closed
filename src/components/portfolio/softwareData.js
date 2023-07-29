@@ -5,7 +5,7 @@ import IMG4 from '../../assets/images/Guess_Me.png';
 import IMG5 from '../../assets/images/drum_kit.png';
 import IMG6 from '../../assets/images/simon_game.png';
 
-const data = [
+const softwareData = [
     {
         id:1,
         image: IMG1,
@@ -62,4 +62,4 @@ const data = [
     }
 ]
 
-export default data;
+export default softwareData;

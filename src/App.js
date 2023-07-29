@@ -7,20 +7,34 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Services from './components/services/services';
 import Achievement from './components/achievement/Achievement';
+import ContactChat from './components/contact/ContactChat';
+
+import { createContext, useState } from 'react';
+
+export const ThemeContext = createContext(null);
 
 function App() {
+
+  const [theme, setTheme] = useState("light");
+  
+  const toggleTheme = () => {
+    setTheme((curr) => (curr=='light' ? 'dark':'light'));
+  }
+
   return (
-    <div className="App">
-      <Header/>
-      <Nav/>
-      <About/>
-      <Experience/>
-      <Services/>
-      <Portfolio/>
-      <Achievement/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div className="App" id={theme}>
+        <Header/>
+        <Nav/>
+        <About/>
+        <Experience/>
+        <Services/>
+        <Portfolio/>
+        {/* <Achievement/> */}
+        <Contact/>
+        <Footer/>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
