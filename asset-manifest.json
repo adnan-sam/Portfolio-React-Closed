@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.54c93a6f.css",
-    "main.js": "/Portfolio-React/static/js/main.f6fd5a44.js",
-    "static/media/texture.jpg": "/Portfolio-React/static/media/texture.e9a7ffe74da169416c11.jpg",
+    "main.css": "/Portfolio-React/static/css/main.8e539880.css",
+    "main.js": "/Portfolio-React/static/js/main.105ba2f7.js",
     "static/media/oatsnmeals.png": "/Portfolio-React/static/media/oatsnmeals.777ac360e64d9cae9528.png",
     "static/media/about-img.png": "/Portfolio-React/static/media/about-img.edc44c50f873432a58bc.png",
     "static/media/adnan-pic.png": "/Portfolio-React/static/media/adnan-pic.b00bd656f205971deb60.png",
@@ -17,11 +16,11 @@
     "static/media/microsoft_ss.jpg": "/Portfolio-React/static/media/microsoft_ss.90c87a1906625472be3e.jpg",
     "static/media/simon_game.png": "/Portfolio-React/static/media/simon_game.0b2229cd38f84a35f96a.png",
     "index.html": "/Portfolio-React/index.html",
-    "main.54c93a6f.css.map": "/Portfolio-React/static/css/main.54c93a6f.css.map",
-    "main.f6fd5a44.js.map": "/Portfolio-React/static/js/main.f6fd5a44.js.map"
+    "main.8e539880.css.map": "/Portfolio-React/static/css/main.8e539880.css.map",
+    "main.105ba2f7.js.map": "/Portfolio-React/static/js/main.105ba2f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.54c93a6f.css",
-    "static/js/main.f6fd5a44.js"
+    "static/css/main.8e539880.css",
+    "static/js/main.105ba2f7.js"
   ]
 }
